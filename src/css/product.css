@@ -1,0 +1,173 @@
+.product-details {
+    display: flex;
+    margin: 50px 0;
+    color: #fff;
+  }
+  
+  .image-slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .product-images {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-right: 1rem;
+  }
+  
+  .big-image {
+    width: 400px;
+    height: 450px;
+    object-fit: cover;
+  }
+  
+  .product-images img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+  }
+  
+  .product-images .active {
+    transform: scale(0.5);
+    opacity: 1;
+  }
+  
+  .product-images img:not(.active) {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+  
+  .thumbnail-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+  }
+  
+  .thumbnail-images img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 0.5rem;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .thumbnail-images .active {
+    border-color: #000;
+    width:100px;
+    height:100px;
+  }
+  
+  .details {
+    width: 40%;
+    margin-left: 50px;
+  }
+  
+  .product-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+  }
+  
+  .product-short-des {
+    font-size: 1.2rem;
+    margin: 0 0 20px;
+  }
+  
+  .product-price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .product-actual-price {
+    font-size: 1.6rem;
+    color: #999;
+    text-decoration: line-through;
+  }
+  
+  .product-discount {
+    font-size: 1.6rem;
+    color: #e67e22;
+  }
+  
+  .product-sub-heading {
+    font-size: 1.2rem;
+    margin: 20px 0 10px;
+    text-transform: uppercase;
+  }
+  
+  .size-radio-btn {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  
+  .size-radio-btn.check {
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+  }
+  
+  .size-radio-btn:active {
+    transform: translateY(1px);
+  }
+  
+  .cart-btn {
+    display: inline-block;
+    background-color: #e67e22;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .cart-btn:hover {
+    transform: scale(1.1);
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 30px;
+    margin-top: 20 
+
+    }
+  
+  .des {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 20px;
+  }
+  
+  .heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }

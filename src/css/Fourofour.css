@@ -1,0 +1,14 @@
+.notfoundimg {
+    display: block;
+    margin: 60px auto;
+}
+
+.notfoundmsg {
+    text-align: center;
+    text-transform: capitalize;
+    color: #383838;
+}
+
+.notfoundmsg a{
+    color: #383838;
+}

@@ -1,0 +1,115 @@
+.ProductContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .slick-list {
+      overflow: hidden;
+    }
+  
+    .slick-slide > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 10px;
+    }
+  
+    .slick-arrow {
+      z-index: 1;
+      width: 30px;
+      height: 30px;
+      background-color: #fff;
+      border-radius: 50%;
+      border: 1px solid #ccc;
+      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+  
+      &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-style: solid;
+        border-width: 6px 4px 0 4px;
+        border-color: #333 transparent transparent transparent;
+      }
+  
+      &.slick-prev {
+        left: 0;
+        &:before {
+          transform: translate(-50%, -50%) rotate(180deg);
+        }
+      }
+  
+      &.slick-next {
+        right: 0;
+        &:before {
+          transform: translate(-50%, -50%);
+        }
+      }
+  
+      &:hover {
+        background-color: #ccc;
+      }
+    }
+  }
+  
+.ProductCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.Product_images {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.ProductCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 20px;
+    height: 400px;
+    text-align: center;
+}
+
+.ProductName, .ProductPrice {
+    color: white;
+}
+  
+.ProductCard img {
+    border-radius: 20px;
+    height: 260px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+  
+.ProductInfo {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+}
+
+.ProductCard h3,
+.ProductCard p {
+  color: #fff;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.ProductCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.ProductCard p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
