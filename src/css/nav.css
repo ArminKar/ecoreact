@@ -162,3 +162,66 @@
     opacity: 0;
     pointer-events: none;
 }
+
+@media only screen and (max-width: 768px) {
+    .nav {
+      flex-direction: column;
+      padding: 10px;
+    }
+    
+    .nav-heading {
+      margin-right: 0;
+      margin-bottom: 10px;
+      text-align: center;
+      font-size: 20px;
+    }
+    
+    .brand-logo {
+      margin-bottom: 10px;
+    }
+    
+    .search {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    
+    .search-box {
+      width: 70%;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    
+    .search-btn {
+      width: 30%;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    
+    .nav-items {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .nav-items a {
+      margin: 10px 0;
+    }
+    
+    .links-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    
+    .link {
+      margin: 10px 0;
+    }
+    
+    .account-info {
+      display: none;
+    }
+    
+    .login-logout-popup {
+      top: 70px;
+    }
+  }
