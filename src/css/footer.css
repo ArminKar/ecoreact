@@ -134,15 +134,6 @@
     }
     
     @media only screen and (max-width: 480px) {
-
-    .footer {
-    text-align: center;
-    }
-    .logo-footer {
-    text-align:center;
-    display: unset;
-    }   
-    
     .footer-content .logo {
     height: 80px;
     }
