@@ -36,7 +36,8 @@ function Footer() {
         Privacy page
       </a>
     </div>
-    <div>
+    </div>
+    <div className='footer-links'>
       <a href="instgram.com" className="social-link">
         <img src={instagram} className="inst " alt="" />
       </a>
@@ -46,9 +47,8 @@ function Footer() {
       <a href="twitter.com" className="social-link">
         <img src={twitter} className="twit" alt="" />
       </a>
+      </div>
     </div>
-  </div>
-</div>
   );
  }
 

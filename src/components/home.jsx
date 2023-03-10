@@ -25,18 +25,14 @@ function Home() {
     <a href="#" className="collection">
       <img src={womencollect} alt="" />
       <p className="collection-title">
-        women <br /> apparels
+        women <br /> category
       </p>
     </a>
     <a href="#" className="collection">
       <img src={mencollect} alt="" />
       <p className="collection-title">
-        men <br /> apparels
+        men <br /> category
       </p>
-    </a>
-    <a href="#" className="collection">
-      <img src={accesoriescollect} alt="" />
-      <p className="collection-title">accessories</p>
     </a>
   </section>
 </div>
