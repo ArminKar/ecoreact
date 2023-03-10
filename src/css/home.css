@@ -61,11 +61,11 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
-  font-size: 50px;
   text-transform: capitalize;
   margin: 0;
   padding: 0;
-  width: 100%;
+  font-size: 50px;
+
   }
       
   .collection:nth-child(3){
@@ -85,6 +85,9 @@ body {
     }
     .product-card {
       margin-right: 20px;
+    }
+    .collection p{
+      font-size: unset;
     }
 
   }
@@ -107,5 +110,9 @@ body {
     .product-short-des {
       height: 40px;
       line-height: 18px;
+    }
+    .collection p{
+      font-size: unset;
+      
     }
   }
