@@ -3,26 +3,25 @@ import lightlogo from '../images/light-logo.png';
 import userlogo from '../images/user.png';
 import cart from '../images/cart.png';
 import { Link } from 'react-router-dom';
-
+import "../css/nav.css";
 
 function Navigation() {
   return (
      <div>
      <div className="nav">
-       <a href="/">
+       <Link to="/">
          <img src={lightlogo} className="brand-logo" alt="" />
-       </a>
+       </Link>
        <div className="nav-items">
          <div className="search">
            <input
              type="text"
              className="search-box"
              placeholder="search brand, product"
-           /><Link to="/search">
-           <button className="search-btn">
-             search
+           />
+           <button href="/search" className="search-btn">
+            Search
            </button>
-           </Link>
          </div>
          <a>
           <Link to="/login">

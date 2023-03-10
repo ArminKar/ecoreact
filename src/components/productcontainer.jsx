@@ -8,6 +8,7 @@ import card5 from '../images/card5.jfif';
 import card6 from '../images/card6.png';
 import card7 from '../images/card7.jfif';
 import card8 from '../images/card8.jfif';
+import "../css/ProductContainer.css";
 
 const ProductContainer = () => {
   const products = [

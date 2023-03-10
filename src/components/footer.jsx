@@ -3,122 +3,12 @@ import lightlogo from '../images/light-logo.png';
 import facebook from '../images/facebook.png';
 import twitter from '../images/twitter.png';
 import instagram from '../images/instagram.png';
-
+import "../css/footer.css";
 
 function Footer() {
   return (
-     <div>
-         <div className="footer-content">
-    <img src={lightlogo} className="logo" alt="logo" />
-    <div className="footer-ul-container">
-      <ul className="category">
-        <li className="category-title">men</li>
-        <li>
-          <a href="#" className="footer-link">
-            t-shirts
-          </a>
-        </li>
-        <li>
-          <a href="#" className="footer-link">
-            sweatshirts
-          </a>
-        </li>
-        <li>
-          <a href="#" className="footer-link">
-            shirts
-          </a>
-        </li>
-        <li>
-          <a href="#" className="footer-link">
-            jeans
-          </a>
-        </li>
-        <li>
-          <a href="#" className="footer-link">
-            trousers
-          </a>
-        </li>
-        <li>
-          <a href="#" className="footer-link">
-            shoes
-          </a>
-        </li>
-        <li>
-          <a href="#" className="footer-link">
-            casuals
-          </a>
-        </li>
-        <li>
-          <a href="#" className="footer-link">
-            formals
-          </a>
-        </li>
-        <li>
-          <a href="#" className="footer-link">
-            sports
-          </a>
-        </li>
-        <li>
-          <a href="#" className="footer-link">
-            watch
-          </a>
-        </li>
-      </ul>
-      <ul className="category">
-        <li className="category-title">women</li>
-        <li>
-          <a href="#" className="footer-link">
-            t-shirts
-          </a>
-        </li>
-        <li>
-          <a href="#" className="footer-link">
-            sweatshirts
-          </a>
-        </li>
-        <li>
-          <a href="#" className="footer-link">
-            shirts
-          </a>
-        </li>
-        <li>
-          <a href="#" className="footer-link">
-            jeans
-          </a>
-        </li>
-        <li>
-          <a href="#" className="footer-link">
-            trousers
-          </a>
-        </li>
-        <li>
-          <a href="#" className="footer-link">
-            shoes
-          </a>
-        </li>
-        <li>
-          <a href="#" className="footer-link">
-            casuals
-          </a>
-        </li>
-        <li>
-          <a href="#" className="footer-link">
-            formals
-          </a>
-        </li>
-        <li>
-          <a href="#" className="footer-link">
-            sports
-          </a>
-        </li>
-        <li>
-          <a href="#" className="footer-link">
-            watch
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
+     <div className="footer">
+  <img src={lightlogo} className="logo-footer" alt="logo" />
   <p className="footer-title">about company</p>
   <p className="info">
     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat tempore

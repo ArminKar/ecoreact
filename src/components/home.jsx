@@ -4,14 +4,14 @@ import womencollect from '../images/women-collection.jpg';
 import mencollect from '../images/men-collection.jpg';
 import accesoriescollect from '../images/accessories-collection.jpeg';
 import ProductContainer from './productcontainer';
-
+import "../css/home.css";
 
 function Home() {
   return (
 <div>
-  <header className="hero-section">
+<header className="hero-section">
     <div className="content">
-      <img src={lightlogo} className="logo" alt="" />
+      <img src={lightlogo} className="logo-hero" alt="" />
       <p className="sub-heading">DARK - ARTS - FASHION</p>
     </div>
   </header>

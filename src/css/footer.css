@@ -1,40 +1,12 @@
-
-.footer-content{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
+.footer{
+    width: 80%;
+    margin: 0 auto;
 }
 
-.footer-content .logo{
-    height: 160px;
-}
-
-.footer-ul-container{
-    width: 45%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.category{
-    width: 200px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    list-style: none;
-}
-
-.category-title{
-    grid-column: span 2;
-    text-transform: capitalize;
-    color: #fff;
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.category .footer-link{
-    text-decoration: none;
-    text-transform: capitalize;
-    color: rgba(255, 255, 255, 0.75);
+.logo-footer{
+    height:5vh;
+    display: block;
+    margin-top: 15vh;
 }
 
 .footer-link:hover{
@@ -48,7 +20,6 @@
 }
 
 .footer-title{
-    margin-top: 80px;
     color: #fff;
 }
 

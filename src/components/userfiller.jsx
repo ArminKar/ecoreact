@@ -12,13 +12,11 @@ function userfiller() {
     placeholder="short line about the product"
   />
   <textarea id="des" placeholder="detail description" defaultValue={""} />
-  {/* product image */}
   <div className="product-info">
     <div className="product-image">
       <p className="text">product image</p>
     </div>
     <div className="upload-image-sec">
-      {/* upload inputs */}
       <p className="text">
         <img src={camera.png} alt="" />
         upload image

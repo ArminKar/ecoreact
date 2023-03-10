@@ -6,24 +6,31 @@
   
   .image-slider {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-bottom: 2rem;
+    position: relative;
+    left: 300px;
   }
+
   
   .product-images {
-    width: 500px;
+    position: absolute;
     height: 500px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     overflow: hidden;
     margin-right: 1rem;
+    text-align:center;
+    bottom: -280px;
+    left: 50px;
+    flex-direction: row;
   }
   
   .big-image {
-    width: 400px;
     height: 450px;
+    width: 400px;
     object-fit: cover;
   }
   
@@ -32,6 +39,7 @@
     height: 100px;
     object-fit: cover;
     transition: all 0.3s ease;
+    margin-bottom: 0.5rem;
   }
   
   .product-images .active {
@@ -44,39 +52,16 @@
     opacity: 1;
   }
   
-  .thumbnail-images {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    width: 100px;
-  }
-  
-  .thumbnail-images img {
-    max-width: 100px;
-    max-height: 100px;
-    margin-right: 0.5rem;
-    border: 2px solid transparent;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .thumbnail-images .active {
-    border-color: #000;
-    width:100px;
-    height:100px;
-  }
-  
   .details {
-    width: 40%;
-    margin-left: 50px;
+    width: 100%;
+    margin-left: 40vh;
   }
   
   .product-brand {
     font-size: 1.8rem;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 0 0 20px;
+    margin: 50px 0 20px;
   }
   
   .product-short-des {
@@ -115,21 +100,17 @@
     text-align: center;
     border: 2px solid #ddd;
     border-radius: 50%;
-    margin-right: 10px;
+    margin-right: 5px;
     cursor: pointer;
     font-size: 1.2rem;
   }
   
-  .size-radio-btn.check {
+  .size-radio-btn.checked {
     background-color: #333;
     color: #fff;
     border-color: #333;
   }
-  
-  .size-radio-btn:active {
-    transform: translateY(1px);
-  }
-  
+
   .cart-btn {
     display: inline-block;
     background-color: #e67e22;
@@ -140,6 +121,7 @@
     border-radius: 4px;
     padding: 10px 30px;
     margin-top: 20px;
+    margin-right: 10px;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
   }
@@ -158,16 +140,4 @@
     border-radius: 4px;
     padding: 10px 30px;
     margin-top: 20 
-
-    }
-  
-  .des {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-top: 20px;
-  }
-  
-  .heading {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
+}

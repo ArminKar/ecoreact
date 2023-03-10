@@ -1,5 +1,6 @@
 import React from 'react'
 import ProductContainer from './productcontainer';
+import "../css/search.css";
 
 function Search() {
   return (

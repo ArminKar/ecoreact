@@ -1,5 +1,6 @@
 import React from 'react'
 import fof from '../images/404.jpg'
+import "../css/Fourofour.css";
 
 function Fourofour() {
   return (
