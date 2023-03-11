@@ -21,7 +21,7 @@ function Signup() {
     </label>
     <button className="submit-btn">create account</button>
   </div>
-  <a href="/login" className="link">
+  <a href="/login" className="login-link">
     already have an account? Log in here
   </a>
 </div>

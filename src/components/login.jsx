@@ -12,7 +12,7 @@ function Login() {
     <input type="password" autoComplete="off" id="password" placeholder="password" className="loginpassword" />
     <button className="submit-btn">login</button>
   </div>
-  <a href="/signup" className="link">
+  <a href="/signup" className="login-link">
     don't have account? Create one
   </a>
 </div>

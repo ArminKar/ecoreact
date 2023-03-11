@@ -4,6 +4,8 @@ import userlogo from '../images/user.png';
 import cart from '../images/cart.png';
 import { Link } from 'react-router-dom';
 import "../css/nav.css";
+import {menuToggle} from '../js/navigation.js'
+
 
 function Navigation() {
   return (
@@ -23,45 +25,42 @@ function Navigation() {
             Search
            </button>
          </div>
+         <div className='nav-btns'>
          <a>
           <Link to="/login">
-           <img src={userlogo} id="user-img" alt="" />
+           <img src={userlogo} id="user-img" alt="userlogo" className='menu-toggle'/>
            </Link>
-           <div className="login-logout-popup hide">
-             <p className="account-info" />
-             <button className="btn" id="user-btn">
-               Log out
-             </button>
-           </div>
          </a>
          <Link to="/product">
-           <img src={cart} alt="" />
+           <img src={cart} alt="productcart" className='menu-toggle'/>
          </Link>
+         <button className='menu-toggle' onClick={menuToggle}>☰</button>
+         </div>
        </div>
      </div>
      <ul className="links-container">
        <li className="link-item">
-         <a href="#" className="link">
+         <a href="#" className="links">
            home
          </a>
        </li>
        <li className="link-item">
-         <a href="#" className="link">
+         <a href="#" className="links">
            women
          </a>
        </li>
        <li className="link-item">
-         <a href="#" className="link">
+         <a href="#" className="links">
            men
          </a>
        </li>
        <li className="link-item">
-         <a href="#" className="link">
+         <a href="#" className="links">
            kids
          </a>
        </li>
        <li className="link-item">
-         <a href="#" className="link">
+         <a href="#" className="links">
            accessories
          </a>
        </li>
@@ -69,5 +68,6 @@ function Navigation() {
     </div>
   )
  }
+
 
 export default Navigation;

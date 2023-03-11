@@ -1,120 +1,88 @@
-.nav-heading {
-    margin-right: 180px;
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 24px;
-    font-weight: 300;
-    color: #ffff;
+.nav {
+  padding: 10px 5vw 0px 5vw;
+  display: flex;
+  justify-content: space-between;
 }
 
-.navbar{
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9;
+.brand-logo {
+  height: 40px;
+  margin-top: 5px;
 }
 
-.nav{
-    padding: 10px 10vw 0px 10vw;
-    display: flex;
-    justify-content: space-between;
+.nav-items {
+  display: flex;
 }
 
-.brand-logo{
-    height: 60px;
+.search {
+  display: flex;
 }
 
-.nav-items{
-    display: flex;
-    align-items: center;
+.search-box {
+  width: 500px;
+  height: 20px;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid #ffff;
+  text-transform: capitalize;
+  background: none;
+  color: white;
+  outline: none;
+  margin-bottom: 25px;
 }
 
-.search{
-    width: 500px;
-    display: flex;
-}
-
-.search-box{
-    width: 500px;
-    height: 40px;
-    padding: 10px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border: 1px solid #ffff;
-    text-transform: capitalize;
-    background: none;
-    color: white;
-    outline: none;
-    margin-bottom: 25px;
-}
-
-
-.search-btn{
+.search-btn {
   padding: 20px;
+  height:20px;
   cursor: pointer;
   border: none;
   background: #444;
   color: #fff;
   text-transform: capitalize;
-  font-size: 15px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   text-align: center;
   align-items: center;
-  margin-bottom: 25px;
+  justify-content: center;
+  display: flex;
 }
 
-.search-box::placeholder{
-    color: #ffff;
+.search-box::placeholder {
+  color: #ffff;
 }
 
-.nav-items a{
-    margin-left: 20px;
-    position: relative;
+.nav-btns {
+  display: inline-block;
+
 }
 
-.nav-items a img{
-    width: 30px;
-    cursor: pointer;
+.menu-toggle {
+  text-transform: capitalize;
+  padding: 10px 20px;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 50px;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-
-.login-logout-popup{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px;
-    background: #fff;
-    border-radius: 10px;
-    top: 40px;
-    width: 200px;
-    transition: .5s;
-    border: 2px solid #f5f5f5;
-}
-
-.login-logout-popup::after{
-    content: '';
-    position: relative ;
-    top: -7.5px;
-    left: 50%;
-    transform: translateX(-50%) rotate(45deg);
-    width: 15px;
-    height: 15px;
-    background: #fff;
-    border-radius: 5px;
+.menu-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
 }
 
 .links-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  display: none;
 }
-  
-.link {
+
+.links {
   text-transform: capitalize;
   padding: 10px 20px;
   margin: 0 10px;
@@ -129,47 +97,27 @@
   letter-spacing: 1px;
 }
   
-.link:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    cursor: pointer;
+.links:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
 }
 
-.account-info{
-    font-size: 20px;
-    text-transform: capitalize;
+.links-container.show-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-#user-btn{
-    padding: 10px;
-    background: #444;
-    color: #fff;
-    border: none;
-    outline: none;
-    width: 100%;
-    border-radius: 5px;
-    margin-top: 20px;
-    text-transform: capitalize;
-    cursor: pointer;
-}
-
-.hide {
-    opacity: 0;
-    pointer-events: none;
-}
 
 @media only screen and (max-width: 768px) {
     .nav {
       flex-direction: column;
       text-align: center;
     }
-    
-    .nav-heading {
-      margin-right: 0;
-      margin-bottom: 10px;
-      text-align: center;
-      font-size: 20px;
-    }
-    
+
     .brand-logo {
       margin-bottom: 10px;
     }
@@ -190,32 +138,34 @@
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
     }
-    
+
     .nav-items {
       flex-direction: column;
       align-items: center;
     }
     
-    .nav-items a {
+    .menu-toggle {
+      display: block;
+      margin-top: 10px;
+    }
+  
+    .menu-toggle {
+      margin: 10px 0;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .links {
       margin: 10px 0;
     }
     
     .links-container {
-      display: flex;
+      display: none;
       flex-direction: column;
       align-items: center;
-      margin-bottom: 10px;
     }
     
-    .link {
-      margin: 10px 0;
+    .link-item {
+      margin: 5px 0;
     }
-    
-    .account-info {
-      display: none;
-    }
-    
-    .login-logout-popup {
-      top: 70px;
-    }
-  }
+}
