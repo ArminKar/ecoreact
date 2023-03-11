@@ -141,3 +141,154 @@
     padding: 10px 30px;
     margin-top: 20 
 }
+
+@media only screen and (max-width: 768px) {
+  .product-details {
+  display: block;
+  margin: 50px 0;
+  color: #fff;
+  }
+  
+  .image-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  position: relative;
+  left: 0;
+  }
+  
+  .product-images {
+  position: static;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
+  margin-right: 0;
+  text-align:center;
+  bottom: 0;
+  left: 0;
+  }
+  
+  .big-image {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  }
+  
+  .product-images img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+  margin-right: 0.5rem;
+  }
+  
+  .product-images .active {
+  transform: scale(0.5);
+  opacity: 1;
+  }
+  
+  .product-images img:not(.active) {
+  transform: scale(0.8);
+  opacity: 1;
+  }
+  
+  .details {
+  width: 100%;
+  margin-left: 0;
+  }
+  
+  .product-brand {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 20px 0;
+  }
+  
+  .product-short-des {
+  font-size: 1rem;
+  margin: 0 0 20px;
+  }
+  
+  .product-price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-right: 10px;
+  }
+  
+  .product-actual-price {
+  font-size: 1rem;
+  color: #999;
+  text-decoration: line-through;
+  }
+  
+  .product-discount {
+  font-size: 1rem;
+  color: #e67e22;
+  }
+  
+  .product-sub-heading {
+  font-size: 1rem;
+  margin: 20px 0 10px;
+  text-transform: uppercase;
+  }
+  
+  .size-radio-btn {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  margin-right: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  }
+  
+  .size-radio-btn.checked {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+  }
+  
+  .cart-btn {
+  display: inline-block;
+  background-color: #e67e22;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  }
+  
+  .cart-btn:hover {
+  transform: scale(1.1);
+  }
+  
+  .btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+}
